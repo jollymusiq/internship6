@@ -65,14 +65,16 @@ export default function App() {
       maxWidth:'1000dvw',
     }} >
       <h3 style={{
+          color:"black",
           borderRadius: '10px',
           background:'#e7e97f',
           fontFamily: 'fantasy',
-          marginLeft: '25dvw',
+          marginLeft: '20dvw',
           placeContent:'center',
           placeItems:'center',
-          maxHeight: '70%',
-          maxWidth: '50%',
+          maxHeight: '30%',
+          maxWidth: '37.5%',
+          minWidth: '20%',
           display: 'flex',
           alignSelf:'center',
           justifyContent: 'center',
@@ -81,14 +83,16 @@ export default function App() {
         }}>Artworks from the Art Institute of Chicago</h3>
       <DataTable
           style={{
+          color:"black",  
           borderRadius: '10px',  
           background:'#e7e97f',  
           fontFamily:'cursive',
-          marginLeft: '25dvw',
+          marginLeft: '20dvw',
           placeContent:'center',
           placeItems:'center',
           maxHeight: '50%',
-          maxWidth: '53.5%',
+          minHeight: '30%',
+          maxWidth: '40.5%',
           display: 'flex',
           alignSelf:'center',
           justifyContent: 'center',
@@ -102,7 +106,10 @@ export default function App() {
           selectionMode="multiple" // 👈 Add this line
           showGridlines
           stripedRows
-          responsiveLayout="scroll"
+          rows={rowsPerPage}
+          currentPageReportTemplate="Showing {first} to {last} of {totalRecords} artworks"
+          rowsPerPageOptions={[6, 12, 24, 48]} 
+
         >
         <Column selectionMode="multiple"/>
         <Column field="id" header="ID" />

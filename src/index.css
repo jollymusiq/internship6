@@ -57,7 +57,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #fffdfd;
   }
   a:hover {
     color: #747bff;
@@ -84,13 +84,14 @@ button:focus-visible {
   border-bottom: 2px solid #999;
 }
 .custom-paginator {
+  color: black;
   position:sticky;
   border-radius: 10px;
   margin-top: 20px;
-  margin-left: 408px;
+  margin-left: 20dvw;
   align-content: center;
   background-color: #e7e97f;
-  width: 52.9dvw;
+  width: 70.5dvw;
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
